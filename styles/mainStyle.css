@@ -1,14 +1,21 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
 
 body {
+  margin: 0;
+}
+
+h1, h3, p {
   margin: 0;
 }
 
 button {
   appearance: none;
   border: none;
+  background: transparent;
 }
+
+/*  Toolbar styling */
 
 .toolbar {
   background-color: rgba(60, 58, 57, 1);
@@ -40,8 +47,28 @@ button {
 }
 
 .toolbar button {
-  background: transparent;
   box-sizing: border-box;
   padding: 8px;
   margin-right: 24px;
+}
+
+/* Frame Styling */
+
+#main {
+  background-color: rgba(28, 26, 25, 1); 
+  background-image: url(../images/illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 50%;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: rgba(255, 107, 0, 1);
+  letter-spacing: 0.37px;
 }
