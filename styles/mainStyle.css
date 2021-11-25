@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  appearance: none;
+  border: none;
+  padding: 8px;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*  Toolbar styling */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.toolbar {
+  background-color: rgba(60, 58, 57, 1);
+}
+
+.toolbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textPlaceholder {
+  display: block;
+  padding: 10px 12px;
+  margin-left: 12px;
+  line-height: 24px;
+}
+
+.textPlaceholder a {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.toolbar button {
+  box-sizing: border-box;
+  margin-right: 24px;
+}
+
+/* Frame Styling */
+
+#main {
+  background-color: rgba(28, 26, 25, 1);
+  background-image: url(../images/illustration.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 120%;
+  background-size: 40%;
+  height: 100%;
+}
+
+.container h1,
+h3,
+p {
+  margin-bottom: 12px;
+}
+
+.container h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: rgba(255, 107, 0, 1);
+  letter-spacing: 0.37px;
+}
+
+.container h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 245, 225, 1);
+}
+
+.container p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .header {
+  flex-direction: column;
+  align-items: baseline;
+  padding: 24px;
+}
+
+.social-media {
+  padding: 8px;
+}
