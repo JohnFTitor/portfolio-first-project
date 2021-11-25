@@ -10,7 +10,9 @@ body {
   height: 100%;
 }
 
-h1, h3, p {
+h1,
+h3,
+p {
   margin: 0;
 }
 
@@ -19,6 +21,10 @@ button {
   border: none;
   padding: 8px;
   background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /*  Toolbar styling */
@@ -67,7 +73,7 @@ header {
 /* Frame Styling */
 
 #main {
-  background-color: rgba(28, 26, 25, 1); 
+  background-color: rgba(28, 26, 25, 1);
   background-image: url(../images/illustration.svg);
   background-repeat: no-repeat;
   background-position: 100% 120%;
@@ -75,7 +81,9 @@ header {
   height: 100%;
 }
 
-.container h1, h3, p {
+.container h1,
+h3,
+p .textPlaceholder {
   margin-bottom: 12px;
 }
 
@@ -91,7 +99,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: rgba(255, 245, 225, 1)
+  color: rgba(255, 245, 225, 1);
 }
 
 .container p {
@@ -102,7 +110,7 @@ header {
 }
 
 .container {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
