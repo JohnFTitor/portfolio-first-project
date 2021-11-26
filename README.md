@@ -22,6 +22,10 @@ This is a Portfolio that works as a presentation card for a Software developer, 
 
 To get a local copy up and running follow these simple example steps.
 
+- Clone this repository with git clone```https://github.com/JohnFTitor/portfolioFirstProject.git``` using your terminal or command line.
+- Change to the project directory by entering : <br>
+```cd portfolioFirstProject``` in the terminal
+
 ### Prerequisites
 There's no installation required.  One suggestion is to have a Text Editor with a plugin to easily deploy the project (Like Live Server in VSCode) while modifying it.
 
