@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
 
 html {
   height: 100%;
@@ -58,6 +58,7 @@ header {
 
 .textPlaceholder {
   display: block;
+  box-sizing: border-box;
   padding: 10px 12px;
   margin-left: 12px;
   line-height: 24px;
@@ -132,7 +133,7 @@ p {
   padding: 8px;
 }
 
-.container .works {
+.works {
   flex-direction: column;
 }
 
@@ -149,7 +150,77 @@ p {
 }
 
 .line {
-  border: 1px solid rgba(33, 33, 33, 0.8);
+  border-bottom: 1px solid rgba(33, 33, 33, 0.6);
   width: 100%;
   margin-bottom: 100px;
+}
+
+.gridContainer {
+  display: grid;
+  box-sizing: border-box;
+  padding: 0 24px;
+  margin-bottom: 100px;
+  border: 1px solid red;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  grid-column: 1/span 3;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 24px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(9, 30, 66, 1);
+}
+
+.card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(9, 30, 66, 1);
+}
+
+.tag {
+  margin: 0 12px 0 0;
+  border: 1px solid rgba(137, 147, 164, 1)
+}
+
+.tags {
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.tag a {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(9, 30, 66, 1);
+}
+
+.interaction {
+  padding: 12px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 107, 0, 1); 
+}
+
+.interaction p {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  letter-spacing: 1px;
 }
