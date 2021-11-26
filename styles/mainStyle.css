@@ -90,8 +90,8 @@ header {
 }
 
 .container h1,
-h3,
-p {
+.container h3,
+.container p {
   margin-bottom: 12px;
 }
 
@@ -133,6 +133,8 @@ p {
   padding: 8px;
 }
 
+/*  Projects section */
+
 .works {
   flex-direction: column;
 }
@@ -159,10 +161,10 @@ p {
   display: grid;
   box-sizing: border-box;
   padding: 0 24px;
-  margin-bottom: 100px;
-  border: 1px solid red;
+  margin-bottom: 130px;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  grid-auto-rows: minmax(380px, auto);
+  row-gap: 24px;
 }
 
 .card {
@@ -190,12 +192,15 @@ p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+.featured p {
   color: rgba(9, 30, 66, 1);
 }
 
 .tag {
   margin: 0 12px 0 0;
-  border: 1px solid rgba(137, 147, 164, 1)
+  border: 1px solid rgba(137, 147, 164, 1);
 }
 
 .tags {
@@ -207,20 +212,71 @@ p {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
+}
+
+.featured a {
   color: rgba(9, 30, 66, 1);
 }
 
 .interaction {
   padding: 12px;
   color: rgba(255, 255, 255, 1);
-  background: rgba(255, 107, 0, 1); 
-}
-
-.interaction p {
+  background: rgba(255, 107, 0, 1);
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   margin: 0;
-  color: rgba(255, 255, 255, 1);
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.other {
+  position: relative;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.other .info {
+  padding: 10px 16px;
+}
+
+.other img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+}
+
+.other h3,
+.other p,
+.other a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.other .tag {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.other .interaction {
+  width: 100%;
+}
+
+.interaction:hover {
+  background-color: rgba(255, 245, 225, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+  padding: 11px;
+  color: rgba(245, 88, 0, 1);
+}
+
+.interaction:focus {
+  background-color: rgba(224, 83, 4, 1);
+  border: none;
+  padding: 12px;
+  color: rgba(244, 241, 240, 1);
+}
+
+.interaction:disabled {
+  background-color: rgba(244, 241, 240, 1);
+  color: rgba(91, 89, 87, 1);
 }
