@@ -64,7 +64,8 @@ header {
   line-height: 24px;
 }
 
-.textPlaceholder a {
+.textPlaceholder a,
+.textPlaceholder p {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
@@ -123,7 +124,7 @@ header {
   align-items: center;
 }
 
-.container .header {
+.content {
   flex-direction: column;
   align-items: baseline;
   padding: 24px;
@@ -151,7 +152,7 @@ header {
   color: rgba(28, 26, 25, 1);
 }
 
-.line {
+.container .line {
   border-bottom: 1px solid rgba(33, 33, 33, 0.6);
   width: 100%;
   margin-bottom: 100px;
@@ -223,6 +224,7 @@ header {
 }
 
 .interaction {
+  display: block;
   padding: 12px;
   background: rgba(255, 107, 0, 1);
   color: rgba(255, 255, 255, 1);
@@ -232,7 +234,6 @@ header {
   font-weight: 700;
   letter-spacing: 1px;
   box-sizing: border-box;
-  display: block;
   text-align: center;
 }
 
@@ -286,4 +287,54 @@ header {
 .interaction:disabled {
   background-color: rgba(244, 241, 240, 1);
   color: rgba(91, 89, 87, 1);
+}
+
+/* About */
+
+#about {
+  flex-direction: column;
+  background-color: rgba(28, 26, 25, 1);
+  padding-bottom: 100px;
+}
+
+.about .line {
+  border: 1px solid rgba(255, 255, 255, 1);
+  margin-top: 210px;
+}
+
+.about {
+  margin-top: 100px;
+  background-image: url(../images/about.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right 65%;
+}
+
+.about h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.about p {
+  color: rgba(244, 245, 247, 1);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.categories h3{
+  margin: 0;
+  padding: 12px;
+  color: rgba(255, 255, 255, 1);  
+}
+
+.element p {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400; 
+}
+
+.knowledge {
+  align-items: center;
 }
