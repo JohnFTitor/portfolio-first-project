@@ -215,12 +215,14 @@ header {
   font-weight: 500;
 }
 
-.featured .textPlaceholder a {
-  color: rgba(9, 30, 66, 1);
+.other h3,
+.other p,
+.other a {
+  color: rgba(255, 255, 255, 1);
 }
 
-.featured .interaction {
-  width: fit-content;
+.featured .textPlaceholder a {
+  color: rgba(9, 30, 66, 1);
 }
 
 .interaction {
@@ -235,6 +237,10 @@ header {
   letter-spacing: 1px;
   box-sizing: border-box;
   text-align: center;
+}
+
+.featured .interaction {
+  width: fit-content;
 }
 
 .other {
@@ -253,12 +259,6 @@ header {
   z-index: -1;
   object-fit: cover;
   height: 100%;
-}
-
-.other h3,
-.other p,
-.other a {
-  color: rgba(255, 255, 255, 1);
 }
 
 .other .tag {
@@ -322,17 +322,17 @@ header {
   margin-bottom: 36px;
 }
 
-.categories h3{
+.categories h3 {
   margin: 0;
   padding: 12px;
-  color: rgba(255, 255, 255, 1);  
+  color: rgba(255, 255, 255, 1);
 }
 
 .element p {
   display: block;
   font-family: 'Inter', sans-serif;
   font-size: 22px;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .knowledge {
