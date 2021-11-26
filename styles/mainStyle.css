@@ -214,19 +214,26 @@ header {
   font-weight: 500;
 }
 
-.featured a {
+.featured .textPlaceholder a {
   color: rgba(9, 30, 66, 1);
+}
+
+.featured .interaction {
+  width: fit-content;
 }
 
 .interaction {
   padding: 12px;
-  color: rgba(255, 255, 255, 1);
   background: rgba(255, 107, 0, 1);
+  color: rgba(255, 255, 255, 1);
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   margin: 0;
   font-weight: 700;
   letter-spacing: 1px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
 }
 
 .other {
