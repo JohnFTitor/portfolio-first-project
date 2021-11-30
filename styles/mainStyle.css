@@ -327,6 +327,7 @@ header {
   margin: 0;
   padding: 12px;
   color: rgba(255, 255, 255, 1);
+  font-family: 'Inter', sans-serif;
 }
 
 .element p {
@@ -338,4 +339,13 @@ header {
 
 .knowledge {
   align-items: center;
+}
+
+.contact p {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: rgba(23, 43, 77, 1); 
+  margin-top: 100px; 
 }
