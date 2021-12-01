@@ -433,11 +433,14 @@ header {
     font-weight: 500;
   }
 
+  #presentation h3 {
+    color: rgb(255, 255, 255);
+  }
+
   .container h3 {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 500;
-    color: rgb(255, 255, 255);
   }
 
   #presentation p{
@@ -498,4 +501,32 @@ header {
     margin: 0;
   }
   
+  .gridContainer {
+    padding: 0 140px;
+  }
+
+  .featured {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .featured img {
+    flex: 1.5 0.5; 
+  }
+
+  .featured .info {
+    flex: 1 1;
+    margin-left: 24px;
+  }
+
+  .featured h3 {
+    margin-top: 0;
+    font-size: 40px;
+    font-family: 'Crete Round', sans-serif;
+  }
+
+  .featured .interaction {
+    margin-top: 24px;
+  }
+
 }
