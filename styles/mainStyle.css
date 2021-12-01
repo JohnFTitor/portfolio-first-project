@@ -401,3 +401,20 @@ header {
   padding: 20px 0;
   width: 100%;
 }
+
+@media screen and (min-width: 992px) {
+  #presentation {
+    justify-content: flex-start;
+  }
+  
+  #presentation .content {
+    flex-direction: row-reverse;
+    width: 50vw;
+  }
+  
+  .content .socialGroup {
+    flex-direction: column;
+    padding: 30px;
+    margin-right: 50px;
+  }
+}
