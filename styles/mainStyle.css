@@ -91,6 +91,10 @@ header {
   margin-right: 24px;
 }
 
+#navigation {
+  display: none;
+}
+
 /* Frame Styling */
 
 #presentation {
@@ -406,12 +410,12 @@ header {
   #presentation {
     justify-content: flex-start;
   }
-  
+
   #presentation .content {
     flex-direction: row-reverse;
     width: 50vw;
   }
-  
+
   .content .socialGroup {
     flex-direction: column;
     padding: 10px;
@@ -427,7 +431,7 @@ header {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 500;
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
   }
 
   .container p {
@@ -436,5 +440,30 @@ header {
     font-weight: 400;
     color: rgba(244, 245, 247, 1);
     line-height: 32px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #navigation {
+    display: flex;
+  }
+
+  .toolbar ul {
+    justify-content: space-around;
+  }
+
+  .toolbar .textPlaceholder {
+    padding: 26px;
+    margin: 0;
+  }
+
+  .textPlaceholder a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
