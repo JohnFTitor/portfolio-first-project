@@ -402,7 +402,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   #presentation {
     justify-content: flex-start;
   }
@@ -414,7 +414,27 @@ header {
   
   .content .socialGroup {
     flex-direction: column;
-    padding: 30px;
-    margin-right: 50px;
+    padding: 10px;
+    margin-right: 70px;
+  }
+
+  .container h1 {
+    font-size: 72px;
+    font-weight: 500;
+  }
+
+  .container h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(255, 255, 255)
+  }
+
+  .container p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(244, 245, 247, 1);
+    line-height: 32px;
   }
 }
