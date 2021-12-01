@@ -102,7 +102,7 @@ header {
   background-image: url(../images/illustration.svg);
   background-repeat: no-repeat;
   background-position: 100% 120%;
-  background-size: 40%;
+  background-size: auto;
   height: 100%;
 }
 
@@ -409,6 +409,9 @@ header {
 @media screen and (min-width: 1000px) {
   #presentation {
     justify-content: flex-start;
+    background-image: url(../images/Illustration-header.svg);
+    background-position: right;
+    background-size: auto;
   }
 
   #presentation .content {
