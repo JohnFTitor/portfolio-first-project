@@ -650,7 +650,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1230px) {
+@media screen and (min-width: 1190px) {
   .gridContainer {
     grid-template-columns: repeat(3, 1fr);
   }
