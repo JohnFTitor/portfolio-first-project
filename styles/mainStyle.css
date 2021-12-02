@@ -230,6 +230,10 @@ header {
   font-weight: 500;
 }
 
+.other-desktop {
+  display: none;
+}
+
 .other h3,
 .other p,
 .other a {
@@ -418,7 +422,6 @@ header {
 }
 
 @media screen and (min-width: 1000px) {
-
   /* Frame and toolbar styling */
 
   #presentation {
@@ -444,18 +447,10 @@ header {
     font-weight: 500;
   }
 
-  #presentation h3 {
-    color: rgb(255, 255, 255);
-  }
-
   .container h3 {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 500;
-  }
-
-  #presentation p{
-    color: rgba(244, 245, 247, 1);
   }
 
   .container p {
@@ -501,7 +496,7 @@ header {
     align-items: center;
     padding: 0 140px 40px 140px;
     box-sizing: border-box;
-  } 
+  }
 
   .works h2 {
     padding: 0;
@@ -514,7 +509,7 @@ header {
     width: auto;
     margin: 0;
   }
-  
+
   .gridContainer {
     padding: 0 140px;
     grid-auto-rows: minmax(500px, auto);
@@ -526,7 +521,7 @@ header {
   }
 
   .featured img {
-    flex: 1.5 0.5; 
+    flex: 1.5 0.5;
   }
 
   .featured .info {
@@ -553,6 +548,14 @@ header {
     margin-top: 24px;
   }
 
+  .other {
+    display: none;
+  }
+
+  .other-desktop {
+    display: flex;
+  }
+
   /* About */
 
   #about {
@@ -562,7 +565,7 @@ header {
   .about {
     margin-left: 40px;
     background-image: url(../images/about-desktop.svg);
-    background-position: right 0%;    
+    background-position: right 0%;
   }
 
   .about p {
@@ -607,7 +610,7 @@ header {
     line-height: 52px;
     margin-right: 24px;
     color: rgba(38, 38, 38, 1);
-    flex: 1 1; 
+    flex: 1 1;
   }
 
   .contact form {
@@ -619,23 +622,35 @@ header {
     flex-direction: row;
     align-items: baseline;
   }
+
+  .other .interaction {
+    padding: 17px;
+  }
+
+  /* ID Styling */
+
+  #presentation h3 {
+    color: rgb(255, 255, 255);
+  }
+
+  #presentation p {
+    color: rgba(244, 245, 247, 1);
+  }
 }
 
-@media  screen and (min-width: 672px) and (max-width: 1000px) {
+@media screen and (min-width: 672px) and (max-width: 1000px) {
   #presentation {
     background-size: 25%;
-  }  
+  }
 }
 
-
-@media screen and (min-width: 672px) and (max-width:1230px) {
+@media screen and (min-width: 672px) and (max-width: 1230px) {
   .featured {
     grid-column: 1/span 2;
   }
 }
 
-
-@media  screen and (min-width: 1230px) {
+@media screen and (min-width: 1230px) {
   .gridContainer {
     grid-template-columns: repeat(3, 1fr);
   }
