@@ -91,6 +91,10 @@ header {
   margin-right: 24px;
 }
 
+#navigation {
+  display: none;
+}
+
 /* Frame Styling */
 
 #presentation {
@@ -98,7 +102,7 @@ header {
   background-image: url(../images/illustration.svg);
   background-repeat: no-repeat;
   background-position: 100% 120%;
-  background-size: 40%;
+  background-size: auto;
   height: 100%;
 }
 
@@ -150,6 +154,8 @@ header {
 
 .works {
   flex-direction: column;
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
 
 .works h2 {
@@ -157,7 +163,6 @@ header {
   box-sizing: border-box;
   padding-bottom: 40px;
   margin: 0;
-  margin-top: 150px;
   font-family: 'Crete Round', sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -167,24 +172,22 @@ header {
 .container .line {
   border-bottom: 1px solid rgba(33, 33, 33, 0.6);
   width: 100%;
-  margin-bottom: 100px;
 }
 
 .gridContainer {
   display: grid;
   box-sizing: border-box;
   padding: 0 24px;
-  margin-bottom: 130px;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(380px, auto);
-  row-gap: 24px;
+  gap: 24px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  grid-column: 1/span 3;
 }
 
 .card img {
@@ -225,6 +228,10 @@ header {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
+}
+
+.other-desktop {
+  display: none;
 }
 
 .other h3,
@@ -311,15 +318,17 @@ header {
 
 .about .line {
   border: 1px solid rgba(255, 255, 255, 1);
-  margin-top: 210px;
+  margin-top: 240px;
 }
 
 .about {
-  margin-top: 100px;
+  margin: 100px 0 130px 0;
   background-image: url(../images/about.svg);
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right 65%;
+  background-size: auto;
+  background-position: right 85%;
+  padding: 0 7vw;
+  box-sizing: border-box;
 }
 
 .about h1 {
@@ -341,6 +350,10 @@ header {
   font-family: 'Inter', sans-serif;
 }
 
+.categories {
+  padding-bottom: 12px;
+}
+
 .element p {
   display: block;
   font-family: 'Inter', sans-serif;
@@ -348,8 +361,14 @@ header {
   font-weight: 400;
 }
 
+.element {
+  margin: 0;
+  padding: 12px 0;
+}
+
 .knowledge {
   align-items: center;
+  padding-top: 0;
 }
 
 /* Contact Form */
@@ -377,6 +396,7 @@ header {
   font-size: 15px;
   font-weight: 400;
   color: rgba(60, 58, 57, 1);
+  width: 100%;
 }
 
 .contact input {
@@ -386,7 +406,6 @@ header {
 
 .contact textarea {
   padding: 14px;
-  width: 100%;
   background-color: rgba(251, 248, 247, 1);
   height: 100px;
 }
@@ -400,4 +419,247 @@ header {
   margin-top: 60px;
   padding: 20px 0;
   width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  /* Frame and toolbar styling */
+
+  #presentation {
+    justify-content: flex-start;
+    background-image: url(../images/Illustration-header.svg);
+    background-position: right;
+    background-size: 50%;
+  }
+
+  #presentation .content {
+    flex-direction: row-reverse;
+    width: 50vw;
+  }
+
+  .content .socialGroup {
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 70px;
+  }
+
+  .container h1 {
+    font-size: 72px;
+    font-weight: 500;
+  }
+
+  .container h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .container p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #navigation {
+    display: flex;
+  }
+
+  .toolbar ul {
+    justify-content: space-around;
+  }
+
+  .toolbar .textPlaceholder {
+    padding: 26px;
+    margin: 0;
+  }
+
+  .textPlaceholder a {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toolbar .textPlaceholder a {
+    font-weight: 600;
+  }
+
+  /* Projects section */
+
+  .container .works {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 0 10vw 40px 10vw;
+    box-sizing: border-box;
+  }
+
+  .works h2 {
+    padding: 0;
+    margin-right: 35px;
+    color: rgba(9, 30, 66, 1);
+  }
+
+  .works .line {
+    flex-grow: 1;
+    width: auto;
+    margin: 0;
+  }
+
+  .gridContainer {
+    padding: 0 10vw;
+    grid-auto-rows: minmax(500px, auto);
+  }
+
+  .featured {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .featured img {
+    flex: 1.5 0.5;
+  }
+
+  .featured .info {
+    flex: 1 1;
+    margin-left: 24px;
+  }
+
+  .card h3 {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+  }
+
+  .featured h3 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .card p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .featured .interaction {
+    margin-top: 24px;
+  }
+
+  .other {
+    display: none;
+  }
+
+  .other-desktop {
+    display: flex;
+  }
+
+  /* About */
+
+  #about {
+    background-color: rgba(38, 38, 38, 1);
+  }
+
+  .about {
+    margin-left: 40px;
+    background-image: url(../images/about-desktop.svg);
+    background-position: right 0%;
+  }
+
+  .about p {
+    width: 46%;
+  }
+
+  .about h1 {
+    font-weight: 400;
+    color: rgba(245, 88, 0, 1);
+  }
+
+  .knowledge {
+    align-items: baseline;
+  }
+
+  .knowledge-parent {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .element p {
+    font-size: 22px;
+  }
+
+  .categories h3 {
+    font-weight: 700;
+  }
+
+  /* Contact Form */
+
+  #contact {
+    padding: 0 7vw;
+  }
+
+  .contact p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    line-height: 52px;
+    margin-right: 24px;
+    color: rgba(38, 38, 38, 1);
+    flex: 1 1;
+  }
+
+  .contact form {
+    flex: 1.5 1;
+    align-items: baseline;
+  }
+
+  .contact-parent {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .other .interaction {
+    padding: 17px;
+  }
+
+  /* ID Styling */
+
+  #presentation h3 {
+    color: rgb(255, 255, 255);
+  }
+
+  #presentation p {
+    color: rgba(244, 245, 247, 1);
+  }
+}
+
+@media screen and (min-width: 672px) and (max-width: 1000px) {
+  #presentation {
+    background-size: 25%;
+  }
+}
+
+@media screen and (min-width: 672px) and (max-width: 1230px) {
+  .featured {
+    grid-column: 1/span 2;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured {
+    grid-column: 1/span 3;
+  }
+
+  #presentation {
+    background-size: auto;
+  }
 }
