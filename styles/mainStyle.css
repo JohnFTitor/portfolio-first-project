@@ -494,7 +494,7 @@ header {
     flex-direction: row;
     width: 100%;
     align-items: center;
-    padding: 0 140px 40px 140px;
+    padding: 0 10vw 40px 10vw;
     box-sizing: border-box;
   }
 
@@ -511,7 +511,7 @@ header {
   }
 
   .gridContainer {
-    padding: 0 140px;
+    padding: 0 10vw;
     grid-auto-rows: minmax(500px, auto);
   }
 
