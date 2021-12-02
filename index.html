@@ -165,13 +165,15 @@
             <a rel="noopener noreferrer" href="#" class="interaction" aria-label="Resume"> Get My Resume </a>
             <span class="line"></span>
         </div>
-        <ul class="container content knowledge">
+        <ul class="container content knowledge knowledge-parent">
             <li>
-                <div class="container categories">
-                    <img src="icons/diamond.svg" alt="">
-                    <h3> Languages </h3>
-                </div>
                 <ul class="container content knowledge">
+                    <li>
+                        <div class="container categories">
+                            <img src="icons/diamond.svg" alt="">
+                            <h3> Languages </h3>
+                        </div>
+                    </li>
                     <li class="textPlaceholder element">
                         <p> JavaScript </p>
                     </li>
@@ -187,11 +189,13 @@
                 </ul>
             </li>
             <li>
-                <div class="container categories">
-                    <img src="icons/square.svg" alt="">
-                    <h3> Frameworks </h3>
-                </div>
                 <ul class="container content knowledge">
+                    <li>
+                        <div class="container categories">
+                            <img src="icons/square.svg" alt="">
+                            <h3> Frameworks </h3>
+                        </div>
+                    </li>
                     <li class="textPlaceholder element">
                         <p> Bootstrap </p>
                     </li>
@@ -210,11 +214,13 @@
                 </ul>
             </li>
             <li>
-                <div class="container categories">
-                    <img src="icons/circle.svg" alt="">
-                    <h3> Skills </h3>
-                </div>
                 <ul class="container content knowledge">
+                    <li>
+                        <div class="container categories">
+                            <img src="icons/circle.svg" alt="">
+                            <h3> Skills </h3>
+                        </div>
+                    </li>
                     <li class="textPlaceholder element">
                         <p> Codekit </p>
                     </li>
@@ -240,7 +246,7 @@
             <form class="contact" action="https://formspree.io/f/xqknzgnq" method="post">
                 <input name="user-name" type="text" id="name" placeholder="Full name" maxlength="30" required>
                 <input name="user-email" type="email" id="email" placeholder="Email address" required>
-                <textarea name="comment" maxlength="500" required>Enter text here</textarea>
+                <textarea name="comment" maxlength="500" placeholder="Enter text here" required></textarea>
                 <button type="submit" class="interaction">Get in touch</button>
             </form>
         </div>
