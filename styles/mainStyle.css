@@ -179,16 +179,15 @@ header {
   box-sizing: border-box;
   padding: 0 24px;
   margin-bottom: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(380px, auto);
-  row-gap: 24px;
+  gap: 24px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  grid-column: 1/span 3;
 }
 
 .card img {
@@ -473,10 +472,13 @@ header {
 
   .textPlaceholder a {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .toolbar .textPlaceholder a {
+    font-weight: 600;
   }
 
   /* Projects section */
@@ -503,11 +505,14 @@ header {
   
   .gridContainer {
     padding: 0 140px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(500px, auto);
   }
 
   .featured {
     flex-direction: row;
     align-items: flex-start;
+    grid-column: 1/span 3;
   }
 
   .featured img {
@@ -519,14 +524,28 @@ header {
     margin-left: 24px;
   }
 
+  .card h3 {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+  }
+
   .featured h3 {
     margin-top: 0;
     font-size: 40px;
-    font-family: 'Crete Round', sans-serif;
+  }
+
+  .card p {
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .featured .interaction {
     margin-top: 24px;
   }
+}
 
+@media screen and (min-width: 672px) and (max-width:1000px) {
+  .featured {
+    grid-column: 1/span 2;
+  }
 }
