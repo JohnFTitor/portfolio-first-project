@@ -392,6 +392,7 @@ header {
   font-size: 15px;
   font-weight: 400;
   color: rgba(60, 58, 57, 1);
+  width: 100%;
 }
 
 .contact input {
@@ -401,7 +402,6 @@ header {
 
 .contact textarea {
   padding: 14px;
-  width: 100%;
   background-color: rgba(251, 248, 247, 1);
   height: 100px;
 }
@@ -425,6 +425,7 @@ header {
     justify-content: flex-start;
     background-image: url(../images/Illustration-header.svg);
     background-position: right;
+    background-size: 50%;
   }
 
   #presentation .content {
@@ -592,13 +593,47 @@ header {
     font-weight: 700;
   }
 
+  /* Contact Form */
+
+  #contact {
+    padding: 0 7vw;
+  }
+
+  .contact p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    line-height: 52px;
+    margin-right: 24px;
+    color: rgba(38, 38, 38, 1);
+    flex: 1 1; 
+  }
+
+  .contact form {
+    flex: 1.5 1;
+    align-items: baseline;
+  }
+
+  .contact-parent {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
+
+@media  screen and (min-width: 672px) and (max-width: 1000px) {
+  #presentation {
+    background-size: 25%;
+  }  
+}
+
 
 @media screen and (min-width: 672px) and (max-width:1230px) {
   .featured {
     grid-column: 1/span 2;
   }
 }
+
 
 @media  screen and (min-width: 1230px) {
   .gridContainer {
@@ -607,5 +642,9 @@ header {
 
   .featured {
     grid-column: 1/span 3;
+  }
+
+  #presentation {
+    background-size: auto;
   }
 }
