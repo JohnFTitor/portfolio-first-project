@@ -256,6 +256,7 @@ header {
   letter-spacing: 1px;
   box-sizing: border-box;
   text-align: center;
+  transition: all 0.3s linear;
 }
 
 .featured .interaction {
@@ -292,14 +293,14 @@ header {
 .interaction:hover {
   background-color: rgba(255, 245, 225, 1);
   border: 1px solid rgba(245, 88, 0, 1);
-  padding: 11px;
+  padding: 20px;
   color: rgba(245, 88, 0, 1);
 }
 
 .interaction:focus {
   background-color: rgba(224, 83, 4, 1);
   border: none;
-  padding: 12px;
+  padding: 20px;
   color: rgba(244, 241, 240, 1);
 }
 
@@ -397,6 +398,7 @@ header {
   font-weight: 400;
   color: rgba(60, 58, 57, 1);
   width: 100%;
+  transition: all 0.3s ease-in;
 }
 
 .contact input {
@@ -410,6 +412,21 @@ header {
   height: 100px;
 }
 
+.contact input:hover,
+.contact textarea:hover {
+  transform: translate(30px);
+  outline: solid 1px rgba(23, 43, 77, 1);
+}
+
+.contact input:focus-visible,
+.contact textarea:focus-visible {
+  outline: solid 1px rgba(23, 43, 77, 1);
+}
+
+.contact textarea:focus-visible {
+  background-color: white;
+}
+
 .contact > * {
   margin-top: 25px;
 }
@@ -421,9 +438,28 @@ header {
   width: 100%;
 }
 
+/* Animation */
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 73px;
+  background-color: rgba(255, 107, 0, 1);
+  animation: 0.5s infinite alternate spawn;
+}
+
+@keyframes spawn {
+  from {
+    background-color: rgba(255, 107, 0, 1);
+  }
+
+  to {
+    background-color: rgba(28, 26, 25, 1);
+  }
+}
+
 @media screen and (min-width: 1000px) {
   /* Frame and toolbar styling */
-
   #presentation {
     justify-content: flex-start;
     background-image: url(../images/Illustration-header.svg);
@@ -489,7 +525,6 @@ header {
   }
 
   /* Projects section */
-
   .container .works {
     flex-direction: row;
     width: 100%;
@@ -557,7 +592,6 @@ header {
   }
 
   /* About */
-
   #about {
     background-color: rgba(38, 38, 38, 1);
   }
@@ -597,7 +631,6 @@ header {
   }
 
   /* Contact Form */
-
   #contact {
     padding: 0 7vw;
   }
@@ -628,7 +661,6 @@ header {
   }
 
   /* ID Styling */
-
   #presentation h3 {
     color: rgb(255, 255, 255);
   }
