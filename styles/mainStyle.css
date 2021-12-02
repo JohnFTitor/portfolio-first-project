@@ -647,19 +647,6 @@ header {
     }
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 1230px) {
-    .gridContainer {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .featured {
-        grid-column: 1/span 3;
-    }
-    #presentation {
-        background-size: auto;
-    }
-}
-=======
 @media screen and (min-width: 1190px) {
   .gridContainer {
     grid-template-columns: repeat(3, 1fr);
@@ -673,4 +660,3 @@ header {
     background-size: auto;
   }
 }
->>>>>>> main
