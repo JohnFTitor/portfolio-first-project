@@ -430,6 +430,10 @@ header {
   background-color: white;
 }
 
+.contact label {
+  width: 100%;
+}
+
 .contact > * {
   margin-top: 25px;
 }
@@ -486,8 +490,7 @@ header {
     font-weight: 500;
   }
 
-  .container h3,
-  #presentation h2 {
+  .container h3 {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 500;
@@ -668,6 +671,9 @@ header {
   /* ID Styling */
   #presentation h2 {
     color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
   }
 
   #presentation p {
@@ -678,6 +684,12 @@ header {
 @media screen and (min-width: 672px) and (max-width: 1000px) {
   #presentation {
     background-size: 25%;
+    height: auto;
+  }
+
+  #presentation .content {
+    padding: 25vh 0;
+    width: 60vw;
   }
 }
 
