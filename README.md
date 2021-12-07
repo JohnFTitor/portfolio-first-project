@@ -58,7 +58,7 @@ Linter Checks are automatically run with Github actions when there's a pull requ
 
 ## Contributors ⭐️
 
-Special thanks to my coding partners who helped me out bulding this project. Check out their profiles!
+Special thanks to my coding partners who helped me out building this project. Check out their profiles!
 
 👤 **Contributor1**
 
