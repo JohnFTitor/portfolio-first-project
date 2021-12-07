@@ -48,9 +48,7 @@ You're free to use this project however you like it for educational purposes.
 ### Run linters checks
 Linter Checks are automatically run with Github actions when there's a pull request. If you want to run them locally, refer to the link above. 
 
-
 ## Authors
-
 
 👤 **Author1**
 
@@ -58,10 +56,19 @@ Linter Checks are automatically run with Github actions when there's a pull requ
 - Twitter: [@johnftitor](https://twitter.com/johnftitor)
 - LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
 
-👤 **Author2**
+## Contributors ⭐️
+
+Special thanks to my coding partners who helped me out bulding this project. Check out their profiles!
+
+👤 **Contributor1**
 
 - GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
 - LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
+
+👤 **Contributor2**
+
+- GitHub: [@carloshs1994](https://github.com/carloshs1994)
+- Twitter: [@hscarlos_](https://twitter.com/hscarlos_?t=jhubPupZtpVFyICkPdmi_Q&s=08)
 
 ## Show your support
 
