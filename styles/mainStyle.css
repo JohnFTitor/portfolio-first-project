@@ -87,6 +87,13 @@ header {
   box-sizing: border-box;
 }
 
+.menu-item a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(255, 245, 225, 1);
+}
+
 .toolbar button {
   box-sizing: border-box;
   margin-right: 24px;
@@ -482,8 +489,8 @@ header {
 }
 
 #closeButton img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .menu {
@@ -495,14 +502,6 @@ header {
   border-bottom: 1px solid rgba(111, 108, 107, 1);
   padding-bottom: 15px;
   padding-top: 24px;
-  line-height: auto;
-}
-
-.menu-item a {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  color: rgba(255, 245, 225, 1);
 }
 
 .menu-invisible {
