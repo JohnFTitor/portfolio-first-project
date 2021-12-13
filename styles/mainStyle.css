@@ -87,6 +87,13 @@ header {
   box-sizing: border-box;
 }
 
+.menu-item a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(255, 245, 225, 1);
+}
+
 .toolbar button {
   box-sizing: border-box;
   margin-right: 24px;
@@ -465,6 +472,42 @@ header {
   }
 }
 
+/* Menu Pop Up Window */
+
+#menu {
+  position: fixed;
+  background-color: rgba(60, 58, 57, 1);
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+}
+
+#closeButton {
+  margin-top: 2em;
+  margin-right: 2em;
+  float: right;
+}
+
+#closeButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.menu {
+  clear: both;
+}
+
+.menu .textPlaceholder {
+  width: 100%;
+  border-bottom: 1px solid rgba(111, 108, 107, 1);
+  padding-bottom: 15px;
+  padding-top: 24px;
+}
+
+.menu-invisible {
+  display: none;
+}
+
 @media screen and (min-width: 1000px) {
   /* Frame and toolbar styling */
   #presentation {
@@ -503,7 +546,7 @@ header {
     line-height: 32px;
   }
 
-  #menu {
+  #menuButton {
     display: none;
   }
 

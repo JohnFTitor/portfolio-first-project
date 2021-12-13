@@ -40,7 +40,7 @@ Only if you want to run Linter checks locally.
 
 If you're a Microverse Student, reference to this link to get detailed instructions on how to set up linters locally to check this project.
 
-[Linters Config HTML/CSS](https://github.com/microverseinc/linters-config/tree/master/html-css)
+[Linters Config HTML/CSS](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 
 ### Usage
 You're free to use this project however you like it for educational purposes.
@@ -50,7 +50,7 @@ Linter Checks are automatically run with Github actions when there's a pull requ
 
 ## Authors
 
-👤 **Author1**
+👤 **Andrés Felipe Arroyave Naranjo**
 
 - GitHub: [@JohnFTitor](https://github.com/JohnFTitor)
 - Twitter: [@johnftitor](https://twitter.com/johnftitor)
@@ -60,15 +60,21 @@ Linter Checks are automatically run with Github actions when there's a pull requ
 
 Special thanks to my coding partners who helped me out building this project. Check out their profiles!
 
-👤 **Contributor1**
+👤 **Mauro Vasconcelos**
 
 - GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
 - LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
 
-👤 **Contributor2**
+👤 **Carlos Herver**
 
 - GitHub: [@carloshs1994](https://github.com/carloshs1994)
 - Twitter: [@hscarlos_](https://twitter.com/hscarlos_?t=jhubPupZtpVFyICkPdmi_Q&s=08)
+
+👤 **Gabriela Sánchez**
+
+- GitHub: [@githubhandle](https://github.com/gabyse1)
+- Twitter: [@twitterhandle](https://twitter.com/gabyse0)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
 
 ## Show your support
 

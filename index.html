@@ -7,12 +7,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMEWNVY1QW"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-CMEWNVY1QW');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CMEWNVY1QW');
     </script>
+    <script src="scripts/main.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
     <title> Andrés's portfolio </title>
     <link href="styles/mainStyle.css" rel="stylesheet">
@@ -23,18 +24,27 @@
         <nav class="toolbar">
             <ul>
                 <li class="textPlaceholder"> <a href="#" aria-label="John Doe"> John Doe </a> </li>
-                <li> <button id="menu" type="button"> <img src="icons/menu.svg" alt=""> </button></li>
+                <li> <button id="menuButton" type="button"> <img src="icons/menu.svg" alt=""> </button></li>
                 <li id="navigation">
                     <ul class="container">
                         <li class="textPlaceholder"><a href="#projects" aria-label="Portfolio"> Portfolio</a></li>
                         <li class="textPlaceholder"><a href="#about" aria-label="About"> About</a></li>
-                        <li class="textPlaceholder"><a href="#contact" aria-label= "Contact"> Contact</a></li>
-                        <li class="textPlaceholder"><a rel="noopener noreferrer" href="mailto:andresf.2117@gmail.com" aria-label="Send Email"><img src="icons/mail.svg" alt="Send Email"></a></li>
+                        <li class="textPlaceholder"><a href="#contact" aria-label="Contact"> Contact</a></li>
+                        <li class="textPlaceholder"><a rel="noopener noreferrer" href="mailto:andresf.2117@gmail.com"
+                                aria-label="Send Email"><img src="icons/mail.svg" alt="Send Email"></a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
+    <section id="menu" class="menu-invisible">
+        <button type="button" id="closeButton"><img src="icons/close-icon.svg" alt="close icon"></button>
+        <ul class="container content menu">
+            <li class="textPlaceholder menu-item"><a href="#projects" aria-label="Portfolio"> Portfolio</a></li>
+            <li class="textPlaceholder menu-item"><a href="#about" aria-label="About"> About</a></li>
+            <li class="textPlaceholder menu-item"><a href="#contact" aria-label="Contact"> Contact</a></li>
+        </ul>
+    </section>
     <section id="presentation" class="container">
         <div class="container content">
             <div>
@@ -45,24 +55,31 @@
                     I’m a Software Developer
                 </h2>
                 <p>
-                    I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    I can help you build a product , feature or website Look through some of my work and experience! If
+                    you like what you see and have a project you need coded, don’t hestiate to contact me.
                 </p>
             </div>
             <ul class="container socialGroup">
                 <li class="social-media">
-                    <a rel="noopener noreferrer" id="githubButton" href="https://github.com/JohnFTitor" target="_blank" aria-label="GitHub"><img src="icons/gitHub.svg" alt="Github.com Icon"></a>
+                    <a rel="noopener noreferrer" id="githubButton" href="https://github.com/JohnFTitor" target="_blank"
+                        aria-label="GitHub"><img src="icons/gitHub.svg" alt="Github.com Icon"></a>
                 </li>
                 <li class="social-media">
-                    <a rel="noopener noreferrer" id="linkedinButton" href="https://www.linkedin.com/in/andresfelipe117/?locale=en_US" target="_blank" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn.com Icon"></a>
+                    <a rel="noopener noreferrer" id="linkedinButton"
+                        href="https://www.linkedin.com/in/andresfelipe117/?locale=en_US" target="_blank"
+                        aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn.com Icon"></a>
                 </li>
                 <li class="social-media">
-                    <a rel="noopener noreferrer" id="angelistButton" href="#" aria-label="Angelist"><img src="icons/angelist.svg" alt="Angelist.com icon"></a>
+                    <a rel="noopener noreferrer" id="angelistButton" href="#" aria-label="Angelist"><img
+                            src="icons/angelist.svg" alt="Angelist.com icon"></a>
                 </li>
                 <li class="social-media">
-                    <a rel="noopener noreferrer" id="twitterButton" href="https://twitter.com/johnftitor" target="_blank" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter.com icon"></a>
+                    <a rel="noopener noreferrer" id="twitterButton" href="https://twitter.com/johnftitor"
+                        target="_blank" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter.com icon"></a>
                 </li>
                 <li class="social-media">
-                    <a rel="noopener noreferrer" id="mediumButton" href="#" aria-label="Medium"><img src="icons/medium.svg" alt="Medium.com Icon"></a>
+                    <a rel="noopener noreferrer" id="mediumButton" href="#" aria-label="Medium"><img
+                            src="icons/medium.svg" alt="Medium.com Icon"></a>
                 </li>
             </ul>
         </div>
@@ -77,12 +94,18 @@
                 <img src="images/project1.svg" alt="">
                 <div class="info">
                     <h3> Multi-Post Stories </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
+                        dummy text. </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> css </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> css </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                     <a rel="noopener noreferrer" href="#" class="interaction" aria-label="See Project">See Project </a>
                 </div>
@@ -91,11 +114,15 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
                 <a rel="noopener noreferrer" href="#" class="interaction" aria-label="See Project">See Project </a>
@@ -104,11 +131,15 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
                 <a rel="noopener noreferrer" href="#" class="interaction" aria-label="See Project">See Project </a>
@@ -117,11 +148,15 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
                 <a rel="noopener noreferrer" href="#" class="interaction" aria-label="See Project">See Project </a>
@@ -130,11 +165,15 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
                 <a rel="noopener noreferrer" href="#" class="interaction" aria-label="See Project">See Project </a>
@@ -143,7 +182,8 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
                         <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#"> html </a></li>
                         <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#"> bootstrap </a></li>
@@ -156,7 +196,8 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
                         <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#"> html </a></li>
                         <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#"> bootstrap </a></li>
@@ -173,11 +214,15 @@
                 <img src="images/data.png" alt="">
                 <div class="info">
                     <h3> Data Dashboard Healthcare</h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -185,11 +230,15 @@
                 <img src="images/portfolio.png" alt="">
                 <div class="info">
                     <h3> Website Portfolio</h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -197,11 +246,15 @@
                 <img src="images/sampleproject.svg" alt="">
                 <div class="info">
                     <h3> Profesional Art Printing Data </h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -209,11 +262,15 @@
                 <img src="images/data.png" alt="">
                 <div class="info">
                     <h3> Data Dashboard Healthcare</h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -221,11 +278,15 @@
                 <img src="images/portfolio.png" alt="">
                 <div class="info">
                     <h3> Website Portfolio</h3>
-                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard </p>
+                    <p> A daily selection of privately personalized reads; no accounts or sign-ups required. has been
+                        the industry's standard </p>
                     <ul class="container tags">
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap </a></li>
-                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> html </a>
+                        </li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> bootstrap
+                            </a></li>
+                        <li class="textPlaceholder tag"><a rel="noopener noreferrer" href="#" aria-label=""> Ruby </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -234,7 +295,9 @@
     <section id="about" class="container">
         <div class="container content about">
             <h1> About me </h1>
-            <p> Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me. </p>
+            <p> Hello I’m a software developer! I can help you build a product , feature or website Look through some of
+                my work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+                contact me. </p>
             <a rel="noopener noreferrer" href="#" class="interaction" aria-label="Get my Resume"> Get My Resume </a>
             <span class="line"></span>
         </div>
@@ -324,7 +387,8 @@
                     <input name="user-email" type="email" id="email" placeholder="Email address" required>
                 </label>
                 <label for="message">
-                    <textarea name="comment" id="message" maxlength="500" placeholder="Enter text here" required></textarea>
+                    <textarea name="comment" id="message" maxlength="500" placeholder="Enter text here"
+                        required></textarea>
                 </label>
                 <button type="submit" class="interaction">Get in touch</button>
             </form>
@@ -333,19 +397,24 @@
     <footer class="contact">
         <ul class="container socialGroup">
             <li class="social-media">
-                <a rel="noopener noreferrer" href="https://github.com/JohnFTitor" target="_blank" aria-label="GitHub"><img src="icons/blacat.svg" alt="Github.com Icon"></a>
+                <a rel="noopener noreferrer" href="https://github.com/JohnFTitor" target="_blank"
+                    aria-label="GitHub"><img src="icons/blacat.svg" alt="Github.com Icon"></a>
             </li>
             <li class="social-media">
-                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/andresfelipe117/?locale=en_US" target="_blank" aria-label="LinkedIn"><img src="icons/blackIN.svg" alt="LinkedIn.com Icon"></a>
+                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/andresfelipe117/?locale=en_US"
+                    target="_blank" aria-label="LinkedIn"><img src="icons/blackIN.svg" alt="LinkedIn.com Icon"></a>
             </li>
             <li class="social-media">
-                <a rel="noopener noreferrer" href="#" aria-label="Angelist"><img src="icons/peace.svg" alt="Angelist.com Icon"></a>
+                <a rel="noopener noreferrer" href="#" aria-label="Angelist"><img src="icons/peace.svg"
+                        alt="Angelist.com Icon"></a>
             </li>
             <li class="social-media">
-                <a rel="noopener noreferrer" href="https://twitter.com/johnftitor" target="_blank" aria-label="Twitter"><img src="icons/blacktwitter.svg" alt="Twitter.com Icon"></a>
+                <a rel="noopener noreferrer" href="https://twitter.com/johnftitor" target="_blank"
+                    aria-label="Twitter"><img src="icons/blacktwitter.svg" alt="Twitter.com Icon"></a>
             </li>
             <li class="social-media">
-                <a rel="noopener noreferrer" href="#" aria-label="Medium"><img src="icons/blackM.svg" alt="Medium.com Icon"></a>
+                <a rel="noopener noreferrer" href="#" aria-label="Medium"><img src="icons/blackM.svg"
+                        alt="Medium.com Icon"></a>
             </li>
         </ul>
     </footer>
