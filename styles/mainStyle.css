@@ -468,11 +468,26 @@ header {
 /* Menu Pop Up Window */
 
 #menu {
-  position: absolute;
+  position: fixed;
   background-color: rgba(60, 58, 57, 1);
   height: 100vh;
   width: 100%;
   z-index: 3;
+}
+
+#closeButton {
+  margin-top: 2em;
+  margin-right: 2em;
+  float: right;
+}
+
+#closeButton img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu {
+  clear: both;
 }
 
 .menu .textPlaceholder {
@@ -488,6 +503,10 @@ header {
   font-weight: 700;
   font-size: 32px;
   color: rgba(255, 245, 225, 1);
+}
+
+.menu-invisible {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
