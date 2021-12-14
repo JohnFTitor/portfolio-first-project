@@ -328,7 +328,7 @@ header {
   backdrop-filter: blur(2px);
   background-color: transparent;
   width: 100%;
-  height: auto;
+  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -339,7 +339,8 @@ header {
   padding: 16px;
   background-color: white;
   width: 100%;
-  height: 85vh;
+  height: 85vw;
+  max-height: 85vh;
   overflow-y: scroll;
 }
 
@@ -356,7 +357,8 @@ header {
 }
 
 .modal .tags,
-.modal img {
+.modal img,
+.modal p {
   margin-bottom: 24px;
 }
 
@@ -364,14 +366,27 @@ header {
   color: rgba(60, 58, 57, 1);
 }
 
-.modal .info img {
+.projectImg {
   width: 100%;
-  height: auto;
+  height: 40%;
+  overflow: hidden;
+}
+
+.projectImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .popUpButtons {
+  display: flex;
+  justify-content: flex-start;
   box-sizing: border-box;
   padding-bottom: 20px;
+}
+
+.popUpButtons a {
+  margin-right: 16px;
 }
 
 /* About */
@@ -694,6 +709,13 @@ header {
 
   .other-desktop {
     display: flex;
+  }
+
+  /* modal window */
+
+  .projectImg {
+    width: 50%;
+    height: 60%;
   }
 
   /* About */
