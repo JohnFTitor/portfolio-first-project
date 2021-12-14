@@ -339,9 +339,8 @@ header {
   padding: 16px;
   background-color: white;
   width: 100%;
-  height: 85vw;
   max-height: 85vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .headline {
@@ -357,7 +356,6 @@ header {
 }
 
 .modal .tags,
-.modal img,
 .modal p {
   margin-bottom: 24px;
 }
@@ -368,13 +366,13 @@ header {
 
 .projectImg {
   width: 100%;
-  height: 40%;
+  height: 100%;
   overflow: hidden;
 }
 
 .projectImg img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -387,6 +385,13 @@ header {
 
 .popUpButtons a {
   margin-right: 16px;
+}
+
+.modal-grid {
+  display: grid;
+  height: 80vh;
+  grid-gap: 24px;
+  grid-auto-rows: repeat(2, 1fr);
 }
 
 /* About */
@@ -711,11 +716,19 @@ header {
     display: flex;
   }
 
-  /* modal window */
+ /* Modal */
+  .modal-grid {
+    grid-template-rows: minmax(1fr, 50vh);
+    grid-template-columns: 1.5fr 1fr;
+    height: 50vh;
+    width: 100%;
+  }
 
-  .projectImg {
-    width: 50%;
-    height: 60%;
+  .modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   /* About */
