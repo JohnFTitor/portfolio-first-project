@@ -319,6 +319,49 @@ header {
   color: rgba(91, 89, 87, 1);
 }
 
+/* Popup Window */
+
+.modalParent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  backdrop-filter: blur(2px);
+  background-color: transparent;
+
+}
+
+.modal {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 16px;
+  background-color: white;
+}
+
+#closeButtonPopup {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+}
+
+.modal h3{
+  margin-top: 0;
+}
+
+.modal .tags,
+.modal img {
+  margin-bottom: 24px;
+}
+
+.modal .info img {
+  width: 100%;
+  height: auto;
+}
+
+
+
 /* About */
 
 #about {
