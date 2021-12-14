@@ -122,6 +122,9 @@ function renderCards() {
       cardButton.setAttribute('href', `#${cardObj.id}`);
       cardButton.setAttribute('aria-label', 'See Project');
       cardButton.textContent = 'See Project';
+      cardButton.addEventListener('click', () => {
+        popupWindow(cardObj);
+      })
       
       if (cardObj.id === "card-1") {
         info.appendChild(cardButton);
@@ -135,3 +138,32 @@ function renderCards() {
 }
 
 renderCards();
+
+//Modal Window
+
+function popupWindow(cardObj) {
+  const body = document.querySelector('body');
+
+  const modalParent = document.createElement('div');
+  modalParent.classList.add('container', 'modalParent');
+  body.appendChild(modalParent);
+
+  const modal = document.createElement('div');
+  modal.classList.add('container', 'content', 'modal');
+  modal.setAttribute('id', cardObj.id);
+  modalParent.appendChild(modal);
+  
+  const headline = document.createElement('div');
+  headline.classList.add('container', 'headline');
+  modal.appendChild(headline);
+
+  const h3 = document.createElement('h3');
+  h3.textContent = cardObj.title;
+  headline.appendChild(h3);
+
+  const closeButton = document.createElement('button');
+  closeButton.setAttribute('id', 'closeButtonPopup');
+  closeButton.setAttribute('type', 'button');
+  headline.appendChild(closeButton);
+
+}
