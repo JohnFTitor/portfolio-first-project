@@ -250,6 +250,13 @@ header {
   color: rgba(255, 255, 255, 1);
 }
 
+/* Popup Window */
+.popUpButtons a {
+  margin-right: 16px;
+}
+
+/* PopUp Window */
+
 .featured .textPlaceholder a {
   color: rgba(9, 30, 66, 1);
 }
@@ -348,14 +355,22 @@ header {
   justify-content: space-between;
 }
 
-.modal h3{
+.modal h3 {
   margin-top: 0;
   color: rgba(23, 43, 77, 1);
   font-size: 32px;
   font-weight: 700;
 }
 
-.modal .tags,
+.modal .tag {
+  margin-bottom: 12px;
+}
+
+.modal .tags {
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
 .modal p {
   margin-bottom: 24px;
 }
@@ -383,15 +398,11 @@ header {
   padding-bottom: 20px;
 }
 
-.popUpButtons a {
-  margin-right: 16px;
-}
-
 .modal-grid {
   display: grid;
   height: 80vh;
   grid-gap: 24px;
-  grid-auto-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* About */
@@ -716,13 +727,13 @@ header {
     display: flex;
   }
 
- /* Modal */
+  /* Modal */
   .modal {
-    margin: 2em 8em; 
+    margin: 2em 8em;
   }
 
   .modal-grid {
-    grid-template-rows: minmax(1fr, 50vh);
+    grid-template-rows: 50vh;
     grid-template-columns: 1.5fr 1fr;
     height: 50vh;
     width: 100%;

@@ -15,11 +15,14 @@ menuLinks.forEach((link) => {
 
 // Create projects section dynamically
 
+const cards = [];
+let counter = 0;
+
 const gridContainer = document.querySelector('.gridContainer');
 
 function createCard(image, title, shortDescription,
   longDescription, tags, linkLive, linkSource, desktop) {
-  counter++;
+  counter += 1;
   return {
     id: `card-${counter}`,
     image,
@@ -33,8 +36,6 @@ function createCard(image, title, shortDescription,
   };
 }
 
-const cards = [];
-let counter = 0;
 const featured = createCard('images/project1.svg', 'Multi-Post Stories',
   `A daily selection of privately personalized reads; no accounts or sign-ups required. 
 has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
@@ -42,7 +43,7 @@ took a standar dummy text.`, `Lorem Ipsum is simply dummy text of the printing a
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['css', 'html', 'bootstrap', 'Ruby'],
-'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
+  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
 cards.push(featured);
 
 while (counter <= 6) {
@@ -51,16 +52,16 @@ while (counter <= 6) {
   has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], 
- 'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
+ but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
+    'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
   cards.push(other);
 }
 
 const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printing Data', '', `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], 
- 'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+ but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
+'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
 special.id = 'special';
 cards.push(special);
 let index = 0;
@@ -75,87 +76,13 @@ while (counter <= 12) {
   personalized reads; no accounts or sign-ups required. has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], 
- 'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+ but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
+  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
   cards.push(otherDesktop);
-  index++;
+  index += 1;
 }
 
-function renderCards() {
-  cards.forEach((cardObj) => {
-    const card = document.createElement('div');
-    if (cardObj.id === "card-1") {
-      card.classList.add('card', 'featured');
-    } else {
-      card.classList.add('card', 'other');
-    }
-
-    const img = document.createElement('img');
-    img.setAttribute('src', cardObj.image);
-    img.setAttribute('alt', '');
-    card.appendChild(img);
-
-    if (cardObj.desktop) {
-      card.classList.add('other-desktop');
-    }
-
-    const info = document.createElement('div');
-
-    if (cardObj.id !== 'special') {
-      info.classList.add('info');
-      card.appendChild(info);
-
-      const title = document.createElement('h3');
-      title.textContent = cardObj.title;
-      info.appendChild(title);
-
-      const description = document.createElement('p');
-      description.textContent = cardObj.shortDescription;
-      info.appendChild(description);
-
-      const container = document.createElement('ul');
-      container.classList.add('container', 'tags');
-      info.appendChild(container);
-
-      cardObj.tags.forEach((tag) => {
-        const litag = document.createElement('li');
-        litag.classList.add('textPlaceholder', 'tag');
-        container.appendChild(litag);
-
-        const alink = document.createElement('a');
-        alink.setAttribute('rel', 'noopener noreferrer');
-        alink.setAttribute('href', '#');
-        alink.setAttribute('aria-label', '');
-        alink.textContent = tag;
-        litag.appendChild(alink);
-      });
-    }
-
-    if (!cardObj.desktop || cardObj.id === "special") {
-      const cardButton = document.createElement('a');
-      cardButton.classList.add('interaction');
-      cardButton.setAttribute('rel', 'noopener noreferrer');
-      cardButton.setAttribute('href', `#${cardObj.id}`);
-      cardButton.setAttribute('aria-label', 'See Project');
-      cardButton.textContent = 'See Project';
-      cardButton.addEventListener('click', () => {
-        popupWindow(cardObj);
-      })
-
-      if (cardObj.id === "card-1") {
-        info.appendChild(cardButton);
-      } else {
-        card.appendChild(cardButton);
-      }
-    }
-
-    gridContainer.appendChild(card);
-  })
-}
-
-renderCards();
-
-//Modal Window
+// Modal Window
 
 function popupWindow(cardObj) {
   const body = document.querySelector('body');
@@ -250,3 +177,79 @@ function popupWindow(cardObj) {
   source.textContent = 'See Source';
   popupbtn.appendChild(source);
 }
+
+// render Cards and add event listener
+
+function renderCards() {
+  cards.forEach((cardObj) => {
+    const card = document.createElement('div');
+    if (cardObj.id === 'card-1') {
+      card.classList.add('card', 'featured');
+    } else {
+      card.classList.add('card', 'other');
+    }
+
+    const img = document.createElement('img');
+    img.setAttribute('src', cardObj.image);
+    img.setAttribute('alt', '');
+    card.appendChild(img);
+
+    if (cardObj.desktop) {
+      card.classList.add('other-desktop');
+    }
+
+    const info = document.createElement('div');
+
+    if (cardObj.id !== 'special') {
+      info.classList.add('info');
+      card.appendChild(info);
+
+      const title = document.createElement('h3');
+      title.textContent = cardObj.title;
+      info.appendChild(title);
+
+      const description = document.createElement('p');
+      description.textContent = cardObj.shortDescription;
+      info.appendChild(description);
+
+      const container = document.createElement('ul');
+      container.classList.add('container', 'tags');
+      info.appendChild(container);
+
+      cardObj.tags.forEach((tag) => {
+        const litag = document.createElement('li');
+        litag.classList.add('textPlaceholder', 'tag');
+        container.appendChild(litag);
+
+        const alink = document.createElement('a');
+        alink.setAttribute('rel', 'noopener noreferrer');
+        alink.setAttribute('href', '#');
+        alink.setAttribute('aria-label', '');
+        alink.textContent = tag;
+        litag.appendChild(alink);
+      });
+    }
+
+    if (!cardObj.desktop || cardObj.id === 'special') {
+      const cardButton = document.createElement('a');
+      cardButton.classList.add('interaction');
+      cardButton.setAttribute('rel', 'noopener noreferrer');
+      cardButton.setAttribute('href', `#${cardObj.id}`);
+      cardButton.setAttribute('aria-label', 'See Project');
+      cardButton.textContent = 'See Project';
+      cardButton.addEventListener('click', () => {
+        popupWindow(cardObj);
+      });
+
+      if (cardObj.id === 'card-1') {
+        info.appendChild(cardButton);
+      } else {
+        card.appendChild(cardButton);
+      }
+    }
+
+    gridContainer.appendChild(card);
+  });
+}
+
+renderCards();
