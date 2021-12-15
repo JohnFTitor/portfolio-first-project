@@ -18,7 +18,7 @@ menuLinks.forEach((link) => {
 const gridContainer = document.querySelector('.gridContainer');
 
 function createCard(image, title, shortDescription,
-  longDescription, tags, linkLive, LinkSource, desktop) {
+  longDescription, tags, linkLive, linkSource, desktop) {
   counter++;
   return {
     id: `card-${counter}`,
@@ -28,7 +28,7 @@ function createCard(image, title, shortDescription,
     longDescription,
     tags,
     linkLive,
-    LinkSource,
+    linkSource,
     desktop,
   };
 }
@@ -41,7 +41,8 @@ has been the industry's standard dummy text ever since the 1500s, when an unknow
 took a standar dummy text.`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['css', 'html', 'bootstrap', 'Ruby'], '', '', false);
+ but also the leap into electronic typesetting, remaining essent`, ['css', 'html', 'bootstrap', 'Ruby'],
+'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
 cards.push(featured);
 
 while (counter <= 6) {
@@ -50,14 +51,16 @@ while (counter <= 6) {
   has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], '', '', false);
+ but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], 
+ 'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
   cards.push(other);
 }
 
-const special = createCard('images/Img-Placeholder.png', '', '', `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printing Data', '', `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, '', '', '', true);
+ but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], 
+ 'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
 special.id = 'special';
 cards.push(special);
 let index = 0;
@@ -72,7 +75,8 @@ while (counter <= 12) {
   personalized reads; no accounts or sign-ups required. has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], '', '', true);
+ but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'], 
+ 'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
   cards.push(otherDesktop);
   index++;
 }
@@ -230,18 +234,19 @@ function popupWindow(cardObj) {
 
   const live = document.createElement('a');
   live.setAttribute('rel', 'noopener noreferrer');
-  live.setAttribute('href', '#');
+  live.setAttribute('href', cardObj.linkLive);
   live.setAttribute('aria-label', 'See Live');
+  live.setAttribute('target', '_blank');
   live.classList.add('interaction');
   live.textContent = 'See Live';
   popupbtn.appendChild(live);
 
   const source = document.createElement('a');
   source.setAttribute('rel', 'noopener noreferrer');
-  source.setAttribute('href', '#');
+  source.setAttribute('href', cardObj.linkSource);
   source.setAttribute('aria-label', 'See Source');
+  source.setAttribute('target', '_blank');
   source.classList.add('interaction');
   source.textContent = 'See Source';
   popupbtn.appendChild(source);
-
 }
