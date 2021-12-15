@@ -250,6 +250,13 @@ header {
   color: rgba(255, 255, 255, 1);
 }
 
+/* Popup Window */
+.popUpButtons a {
+  margin-right: 16px;
+}
+
+/* PopUp Window */
+
 .featured .textPlaceholder a {
   color: rgba(9, 30, 66, 1);
 }
@@ -317,6 +324,85 @@ header {
 .interaction:disabled {
   background-color: rgba(244, 241, 240, 1);
   color: rgba(91, 89, 87, 1);
+}
+
+/* Popup Window */
+
+.modalParent {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  backdrop-filter: blur(3px);
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.modal {
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 2em 1em;
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.headline {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.modal h3 {
+  margin-top: 0;
+  color: rgba(23, 43, 77, 1);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.modal .tag {
+  margin-bottom: 12px;
+}
+
+.modal .tags {
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.modal p {
+  margin-bottom: 24px;
+}
+
+.modal .tags a {
+  color: rgba(60, 58, 57, 1);
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.projectImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.popUpButtons {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.modal-grid {
+  display: grid;
+  height: 80vh;
+  grid-gap: 24px;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* About */
@@ -639,6 +725,25 @@ header {
 
   .other-desktop {
     display: flex;
+  }
+
+  /* Modal */
+  .modal {
+    margin: 2em 8em;
+  }
+
+  .modal-grid {
+    grid-template-rows: 50vh;
+    grid-template-columns: 1.5fr 1fr;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   /* About */
