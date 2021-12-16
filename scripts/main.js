@@ -259,6 +259,8 @@ const form = document.querySelector('form');
 const errorMessage = document.querySelector('.error');
 
 const email = document.querySelector('#email');
+const nameInput = document.querySelector('#name');
+const messageInput = document.querySelector('#message');
 
 function showError(msg) {
   errorMessage.textContent = msg;
@@ -284,10 +286,45 @@ function checkemail() {
   return true;
 }
 
+let myFormData = { inputName: '', email: '', message: '' };
+
+function setFormData() {
+  myFormData = JSON.parse(localStorage.getItem('formData'));
+
+  email.value = myFormData.email;
+  nameInput.value = myFormData.inputName;
+  messageInput.value = myFormData.message;
+}
+
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(myFormData));
+  setFormData();
+}
+
+if (!localStorage.getItem('formData')) {
+  populateStorage();
+} else {
+  setFormData();
+}
+
+nameInput.addEventListener('input', () => {
+  myFormData.inputName = nameInput.value;
+  populateStorage();
+});
+
+messageInput.addEventListener('input', () => {
+  myFormData.message = messageInput.value;
+  populateStorage();
+});
+
 email.addEventListener('input', () => {
   errorMessage.textContent = '';
   errorMessage.classList.remove('active');
   email.classList.remove('error-icon');
+
+  myFormData.email = email.value;
+
+  populateStorage();
 });
 
 form.addEventListener('submit', (event) => {
@@ -295,5 +332,7 @@ form.addEventListener('submit', (event) => {
 
   if (checkemail()) {
     form.submit();
+    myFormData = { inputName: '', email: '', message: '' };
+    populateStorage();
   }
 });
