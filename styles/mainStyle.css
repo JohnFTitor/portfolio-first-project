@@ -594,6 +594,35 @@ header {
   display: none;
 }
 
+/* Form Valdiation */
+.error {
+  display: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(204, 19, 19);
+  border: 1px solid rgb(204, 19, 19);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.active {
+  display: block;
+}
+
+.alert {
+  display: block;
+  height: 100%;
+}
+
+.error-icon {
+  background-image: url(../icons/exclamation-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 2%;
+  background-position: 95% center;
+}
+
 @media screen and (min-width: 1000px) {
   /* Frame and toolbar styling */
   #presentation {

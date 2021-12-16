@@ -253,3 +253,47 @@ function renderCards() {
 }
 
 renderCards();
+
+const form = document.querySelector('form');
+
+const errorMessage = document.querySelector('.error');
+
+const email = document.querySelector('#email');
+
+function showError(msg) {
+  errorMessage.textContent = msg;
+  errorMessage.classList.add('active');
+  email.classList.add('error-icon');
+}
+
+function checkemail() {
+  const emailValue = email.value.trim();
+
+  if (emailValue === '') {
+    showError('Email should not be blank');
+    return false;
+  }
+
+  const emailRegex = /[A-Z]/g;
+
+  if (emailValue.match(emailRegex)) {
+    showError(`Email field doesn't allow capital letters. It should be ${emailValue.toLowerCase()}`);
+    return false;
+  }
+
+  return true;
+}
+
+email.addEventListener('input', () => {
+  errorMessage.textContent = '';
+  errorMessage.classList.remove('active');
+  email.classList.remove('error-icon');
+});
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (checkemail()) {
+    form.submit();
+  }
+});
