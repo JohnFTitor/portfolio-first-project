@@ -61,7 +61,7 @@ const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printi
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
 special.id = 'special';
 cards.push(special);
 let index = 0;
@@ -77,7 +77,7 @@ while (counter <= 12) {
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-    'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
   cards.push(otherDesktop);
   index += 1;
 }
@@ -286,49 +286,53 @@ function checkemail() {
   return true;
 }
 
+let myFormData = { inputName: '', email: '', message: '' };
+
+function setFormData() {
+  myFormData = JSON.parse(localStorage.getItem('formData'));
+
+  email.value = myFormData.email;
+  nameInput.value = myFormData.inputName;
+  messageInput.value = myFormData.message;
+}
+
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(myFormData));
+  setFormData();
+}
+
 if (!localStorage.getItem('formData')) {
   populateStorage();
 } else {
   setFormData();
 }
 
-let MyFormData = { 'name': '', 'email': '', 'message': '' };
-
-function populateStorage() {
-  localStorage.setItem('formData', JSON.stringify(MyFormData));
-}
-
 nameInput.addEventListener('input', () => {
-  MyFormData.name = this.value;
+  myFormData.inputName = nameInput.value;
   populateStorage();
 });
 
 messageInput.addEventListener('input', () => {
-  MyFormData.message = this.value;
+  myFormData.message = messageInput.value;
   populateStorage();
 });
-
 
 email.addEventListener('input', () => {
   errorMessage.textContent = '';
   errorMessage.classList.remove('active');
   email.classList.remove('error-icon');
 
-  MyFormData.email = email.value;
+  myFormData.email = email.value;
 
   populateStorage();
 });
-
-
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (checkemail()) {
     form.submit();
+    myFormData = { inputName: '', email: '', message: '' };
+    populateStorage();
   }
 });
-
-function setFormData () {
-  MyFormData = JSON.parse(localStorage.getItem('formData'));
-}
