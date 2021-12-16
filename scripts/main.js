@@ -303,6 +303,12 @@ nameInput.addEventListener('input', () => {
   populateStorage();
 });
 
+messageInput.addEventListener('input', () => {
+  MyFormData.message = this.value;
+  populateStorage();
+});
+
+
 email.addEventListener('input', () => {
   errorMessage.textContent = '';
   errorMessage.classList.remove('active');
@@ -322,3 +328,7 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+function setFormData () {
+  MyFormData = JSON.parse(localStorage.getItem('formData'));
+}
