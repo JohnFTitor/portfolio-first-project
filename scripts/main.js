@@ -284,6 +284,18 @@ function checkemail() {
   return true;
 }
 
+if(!localStorage.getItem('formData')) {
+  populateStorage();
+} else {
+  setFormData();
+}
+
+let MyFormData = {};
+
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(MyFormData));
+}
+
 email.addEventListener('input', () => {
   errorMessage.textContent = '';
   errorMessage.classList.remove('active');
