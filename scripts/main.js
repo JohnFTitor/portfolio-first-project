@@ -61,7 +61,7 @@ const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printi
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
 special.id = 'special';
 cards.push(special);
 let index = 0;
@@ -77,7 +77,7 @@ while (counter <= 12) {
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+    'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
   cards.push(otherDesktop);
   index += 1;
 }
@@ -259,6 +259,8 @@ const form = document.querySelector('form');
 const errorMessage = document.querySelector('.error');
 
 const email = document.querySelector('#email');
+const nameInput = document.querySelector('#name');
+const messageInput = document.querySelector('#message');
 
 function showError(msg) {
   errorMessage.textContent = msg;
@@ -284,23 +286,34 @@ function checkemail() {
   return true;
 }
 
-if(!localStorage.getItem('formData')) {
+if (!localStorage.getItem('formData')) {
   populateStorage();
 } else {
   setFormData();
 }
 
-let MyFormData = {};
+let MyFormData = { 'name': '', 'email': '', 'message': '' };
 
 function populateStorage() {
   localStorage.setItem('formData', JSON.stringify(MyFormData));
 }
 
+nameInput.addEventListener('input', () => {
+  MyFormData.name = this.value;
+  populateStorage();
+});
+
 email.addEventListener('input', () => {
   errorMessage.textContent = '';
   errorMessage.classList.remove('active');
   email.classList.remove('error-icon');
+
+  MyFormData.email = email.value;
+
+  populateStorage();
 });
+
+
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
