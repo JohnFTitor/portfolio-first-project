@@ -61,7 +61,7 @@ const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printi
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
 special.id = 'special';
 cards.push(special);
 let index = 0;
@@ -77,7 +77,7 @@ while (counter <= 12) {
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+    'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
   cards.push(otherDesktop);
   index += 1;
 }
@@ -260,14 +260,23 @@ const errorMessage = document.querySelector('.error');
 
 const email = document.querySelector('#email');
 
-function checkemail () {
+function checkemail() {
   const emailValue = email.value.trim();
 
   if (emailValue == '') {
-     errorMessage.textContent = 'Email should not be blank'; 
-  } 
-  if (emailValue == email) {
-    
+    errorMessage.textContent = 'Email should not be blank';
+    errorMessage.classList.add('active');
+    email.classList.add('error-icon');
+    return false;
   }
 
+  const emailRegex = '\^[A-Z]\g';
+
+  if (!emailValue.match(emailRegex)) {
+    errorMessage.textContent = `Email field doesn't allow capital letter`;
+    errorMessage.classList.add('active');
+    email.classList.add('error-icon');
+    return false;
+  }
 }
+
