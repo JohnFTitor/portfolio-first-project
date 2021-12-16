@@ -61,7 +61,7 @@ const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printi
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
 special.id = 'special';
 cards.push(special);
 let index = 0;
@@ -77,7 +77,7 @@ while (counter <= 12) {
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
  but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-    'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
   cards.push(otherDesktop);
   index += 1;
 }
@@ -260,7 +260,7 @@ const errorMessage = document.querySelector('.error');
 
 const email = document.querySelector('#email');
 
-function showError(msg){
+function showError(msg) {
   errorMessage.textContent = msg;
   errorMessage.classList.add('active');
   email.classList.add('error-icon');
@@ -277,7 +277,7 @@ function checkemail() {
   const emailRegex = /[A-Z]/g;
 
   if (emailValue.match(emailRegex)) {
-    showError( `Email field doesn't allow capital letters. It should be ${emailValue.toLowerCase()}`);
+    showError(`Email field doesn't allow capital letters. It should be ${emailValue.toLowerCase()}`);
     return false;
   }
 
@@ -288,12 +288,12 @@ email.addEventListener('input', () => {
   errorMessage.textContent = '';
   errorMessage.classList.remove('active');
   email.classList.remove('error-icon');
-})
+});
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (checkemail()) {
     form.submit();
-  } 
-})
+  }
+});
