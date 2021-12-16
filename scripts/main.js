@@ -253,3 +253,21 @@ function renderCards() {
 }
 
 renderCards();
+
+const form = document.querySelector('form');
+
+const errorMessage = document.querySelector('.error');
+
+const email = document.querySelector('#email');
+
+function checkemail () {
+  const emailValue = email.value.trim();
+
+  if (emailValue == '') {
+     errorMessage.textContent = 'Email should not be blank'; 
+  } 
+  if (emailValue == email) {
+    
+  }
+
+}
