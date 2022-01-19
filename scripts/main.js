@@ -36,51 +36,41 @@ function createCard(image, title, shortDescription,
   };
 }
 
-const featured = createCard('images/project1.svg', 'Multi-Post Stories',
-  `A daily selection of privately personalized reads; no accounts or sign-ups required. 
-has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-took a standar dummy text.`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
- took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['css', 'html', 'bootstrap', 'Ruby'],
-  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
+const featured = createCard('images/ToDoApp.png', 'To-Do List',
+  `In this project, I built a simple HTML list of To-Do tasks. This simple web page was built using Webpack,
+   creating everything from a JavaScript index file that imported all the modules and assets`,
+  `In this project, I built a simple HTML list of To-Do tasks. This simple web page was built using Webpack,
+  creating everything from a JavaScript index file that imported all the modules and assets. You can Add, Remove, Edit and Erase tasks, 
+  with the info being saved on your browser so you don't lose track on your tasks!`, ['SCSS', 'HTML', 'JavaScript'],
+  'https://johnftitor.github.io/toDoList/', 'https://github.com/JohnFTitor/toDoList', false);
 cards.push(featured);
 
-while (counter <= 6) {
-  const other = createCard('images/sampleproject.svg', 'Profesional Art Printing Data',
-    `A daily selection of privately personalized reads; no accounts or sign-ups required. 
-  has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
- took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-    'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', false);
-  cards.push(other);
-}
+const capstone = createCard('images/capstone.png', 'Landing Page',
+  `This is a simple landing page built using HTML/SCSS and JavaScript. This page provides basic navigation 
+  functionality and was made using an appropriate SCSS file structure.`, `This is a simple landing page built using HTML/SCSS and JavaScript. 
+  This page provides basic navigation functionality and was made using an appropriate SCSS file structure.`, ['SCSS', 'HTML', 'JavaScript'],
+  'https://johnftitor.github.io/capstoneProject_first/', 'https://github.com/JohnFTitor/capstoneProject_first', false);
+cards.push(capstone);
 
-const special = createCard('images/Img-Placeholder.png', 'Profesional Art Printing Data', '', `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
- took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
+const awesome = createCard('images/awesome.png', 'Awesome Books Library',
+  `This is a Library Webpage built primarily with JavaScript, creating content dynamically 
+  taking advantage of ES6 Features such as Classes.`, `This is a Library Webpage built primarily with JavaScript, 
+  creating content dynamically taking advantage of ES6 Features such as Classes.`, ['SCSS', 'HTML', 'JavaScript'],
+  'https://melaniesigrid.github.io/awesomeBooks', 'https://github.com/JohnFTitor/awesomeBooks', false);
+cards.push(awesome);
+
+const special = createCard('images/capstone.png', 'Landing Page', '', `This is a simple landing page built using HTML/SCSS and JavaScript. This page provides basic navigation 
+functionality and was made using an appropriate SCSS file structure.`, ['SCSS', 'HTML', 'JavaScript'],
+'https://johnftitor.github.io/capstoneProject_first/', 'https://github.com/JohnFTitor/capstoneProject_first', true);
 special.id = 'special';
 cards.push(special);
-let index = 0;
-const titles = ['Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data'];
-const images = ['images/data.png', 'images/portfolio.png', 'images/sampleproject.svg'];
 
-while (counter <= 12) {
-  if (index > 2) {
-    index = 0;
-  }
-  const otherDesktop = createCard(`${images[index]}`, `${titles[index]}`, `A daily selection of privately 
-  personalized reads; no accounts or sign-ups required. has been the industry's standard`, `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
- took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
- but also the leap into electronic typesetting, remaining essent`, ['html', 'bootstrap', 'Ruby'],
-  'https://johnftitor.github.io/portfolioFirstProject/', 'https://github.com/JohnFTitor/portfolioFirstProject', true);
-  cards.push(otherDesktop);
-  index += 1;
-}
+const awesome2 = createCard('images/awesome.png', 'Awesome Books Library',
+  `This is a Library Webpage built primarily with JavaScript, creating content dynamically 
+  taking advantage of ES6 Features such as Classes.`, `This is a Library Webpage built primarily with JavaScript, 
+  creating content dynamically taking advantage of ES6 Features such as Classes.`, ['SCSS', 'HTML', 'JavaScript'],
+  'https://melaniesigrid.github.io/awesomeBooks', 'https://github.com/JohnFTitor/awesomeBooks', true);
+cards.push(awesome2);
 
 // Modal Window
 
