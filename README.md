@@ -76,6 +76,12 @@ Special thanks to my coding partners who helped me out building this project. Ch
 - Twitter: [@twitterhandle](https://twitter.com/gabyse0)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
 
+👤 **Oyelakin Ridwan**
+
+- GitHub: [@oyelakingG9](https://github.com/oyelakinG9/setup_project.git)
+- Twitter: [@oyelakinG9](https://github.com/oyelakinG9/setup_project.git)
+- LinkedIn: [Oyelakin](https://www.linkedin.com/in/oyelakin-ridwan-4b4a02b6)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
