@@ -10,7 +10,7 @@ This is a Portfolio that works as a presentation card for a Software developer, 
 
 ## Built With
 
-- HTML/CSS
+- HTML/CSS and JavaScript
 - Visual Studio Code, Chrome Developer Tools
 
 ## Live Demo
