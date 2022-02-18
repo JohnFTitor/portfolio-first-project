@@ -3,4 +3,5 @@ package.json
 package-lock.json
 .hintrc
 .stylelintrc.json
+.eslint.json
 report.txt
