@@ -1,91 +1,70 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Getting Started with Create React App
 
-# Portfolio
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> This is the first Microverse project prepared for module one, where we look at the basics of how to write proper HTML/CSS while building a project. 
+## Available Scripts
 
-![Preview](./preview.gif)
+In the project directory, you can run:
 
-This is a Portfolio that works as a presentation card for a Software developer, showcasing some important projects, personal and contact info, while keeping a fresh and elegant web design. 
+### `npm start`
 
-## Built With
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- HTML/CSS and JavaScript
-- Visual Studio Code, Chrome Developer Tools
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Live Demo
+### `npm test`
 
-[Live Demo Link](https://johnftitor.github.io/portfolioFirstProject/)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Getting Started
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-To get a local copy up and running follow these simple example steps.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Clone this repository with git clone```https://github.com/JohnFTitor/portfolioFirstProject.git``` using your terminal or command line.
-- Change to the project directory by entering : <br>
-```cd portfolioFirstProject``` in the terminal
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Prerequisites
-There's no installation required.  One suggestion is to have a Text Editor with a plugin to easily deploy the project (Like Live Server in VSCode) while modifying it.
+### `npm run eject`
 
-If you want to run Linter checks locally, it's another story. You need to make sure to have installed the latest version of Node.js and npm on your computer.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Setup
-You can clone this repository or simply download the files as a .zip
-If you want to set up a personal repository based on this one, you can as well fork it.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Install
-Only if you want to run Linter checks locally.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-If you're a Microverse Student, reference to this link to get detailed instructions on how to set up linters locally to check this project.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-[Linters Config HTML/CSS](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
+## Learn More
 
-### Usage
-You're free to use this project however you like it for educational purposes.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Run linters checks
-Linter Checks are automatically run with Github actions when there's a pull request. If you want to run them locally, refer to the link above. 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Authors
+### Code Splitting
 
-👤 **Andrés Felipe Arroyave Naranjo**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- GitHub: [@JohnFTitor](https://github.com/JohnFTitor)
-- Twitter: [@johnftitor](https://twitter.com/johnftitor)
-- LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
+### Analyzing the Bundle Size
 
-## Contributors ⭐️
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Special thanks to my coding partners who helped me out building this project. Check out their profiles!
+### Making a Progressive Web App
 
-👤 **Mauro Vasconcelos**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
-- LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
+### Advanced Configuration
 
-👤 **Carlos Herver**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- GitHub: [@carloshs1994](https://github.com/carloshs1994)
-- Twitter: [@hscarlos_](https://twitter.com/hscarlos_?t=jhubPupZtpVFyICkPdmi_Q&s=08)
+### Deployment
 
-👤 **Gabriela Sánchez**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- GitHub: [@githubhandle](https://github.com/gabyse1)
-- Twitter: [@twitterhandle](https://twitter.com/gabyse0)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
+### `npm run build` fails to minify
 
-👤 **Oyelakin Ridwan**
-
-- GitHub: [@oyelakingG9](https://github.com/oyelakinG9/setup_project.git)
-- Twitter: [@oyelakinG9](https://github.com/oyelakinG9/setup_project.git)
-- LinkedIn: [Oyelakin](https://www.linkedin.com/in/oyelakin-ridwan-4b4a02b6)
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
