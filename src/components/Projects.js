@@ -3,6 +3,8 @@ import Project from './Project';
 
 // Assets
 import ToDoPhoto from '../assets/images/ToDoApp.png';
+import CapstonePhoto from '../assets/images/capstone.png';
+import AwesomePhoto from '../assets/images/awesome.png';
 
 const Projects = () => {
   const [isDesktop, setIsDesktop] = useState(() => (
@@ -34,6 +36,32 @@ const Projects = () => {
           tags={['SCSS', 'HTML', 'JavaScript']}
           linkLive="https://johnftitor.github.io/toDoList/"
           linkSource="https://github.com/JohnFTitor/toDoList"
+          desktop={isDesktop}
+        />
+        <Project
+          id="special"
+          image={CapstonePhoto}
+          title="Landing Page"
+          shortDescription={`This is a simple landing page built using HTML/SCSS and JavaScript. 
+          This page provides basic navigation functionality and was made using an appropriate SCSS file structure.`}
+          longDescription={`This is a simple landing page built using HTML/SCSS and JavaScript. 
+          This page provides basic navigation functionality and was made using an appropriate SCSS file structure.`}
+          tags={['SCSS', 'HTML', 'JavaScript']}
+          linkLive="https://johnftitor.github.io/capstoneProject_first/"
+          linkSource="https://github.com/JohnFTitor/capstoneProject_first"
+          desktop={isDesktop}
+        />
+        <Project
+          id="card-2"
+          image={AwesomePhoto}
+          title="Awesome Books Library"
+          shortDescription={`This is a Library Webpage built primarily with JavaScript, creating content dynamically 
+          taking advantage of ES6 Features such as Classes.`}
+          longDescription={`This is a Library Webpage built primarily with JavaScript, 
+          creating content dynamically taking advantage of ES6 Features such as Classes.`}
+          tags={['SCSS', 'HTML', 'JavaScript']}
+          linkLive="https://melaniesigrid.github.io/awesomeBooks"
+          linkSource="https://github.com/JohnFTitor/awesomeBooks"
           desktop={isDesktop}
         />
       </div>
