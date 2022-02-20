@@ -33,9 +33,15 @@ const Project = (props) => {
   };
 
   let cardClasses = 'card';
+  let projectImage = <img src={image} alt={title} />;
 
   if (id === 'card-1') {
     cardClasses += ' featured';
+    projectImage = (
+      <div className="featured-container">
+        <img src={image} alt={title} />
+      </div>
+    );
   } else {
     cardClasses += ' other';
     if (desktop) {
@@ -85,7 +91,7 @@ const Project = (props) => {
 
   return (
     <div className={cardClasses}>
-      <img src={image} alt={title} />
+      {projectImage}
       {info}
       {cardButton}
     </div>
