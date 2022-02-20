@@ -61,6 +61,7 @@ header {
 
 .toolbar {
   background-color: rgba(60, 58, 57, 1);
+  padding: 10px;
 }
 
 .toolbar ul {
@@ -107,7 +108,6 @@ header {
 
 #presentation {
   background-color: rgba(28, 26, 25, 1);
-  background-image: url(../assets/images/illustration.svg);
   background-repeat: no-repeat;
   background-position: 100% 120%;
   background-size: auto;
@@ -421,7 +421,6 @@ header {
 
 .about {
   margin: 100px 0 130px 0;
-  background-image: url(../assets/images/about.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 85%;
@@ -562,7 +561,9 @@ header {
 /* Menu Pop Up Window */
 
 #menu {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: rgba(60, 58, 57, 1);
   height: 100vh;
   width: 100%;
@@ -618,7 +619,6 @@ header {
 }
 
 .error-icon {
-  background-image: url(../assets/icons/exclamation-solid.svg);
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: 95% center;
@@ -628,7 +628,6 @@ header {
   /* Frame and toolbar styling */
   #presentation {
     justify-content: flex-start;
-    background-image: url(../assets/images/Illustration-header.svg);
     background-position: right;
     background-size: 50%;
   }
@@ -668,6 +667,10 @@ header {
 
   #navigation {
     display: flex;
+  }
+
+  .toolbar {
+    padding: 0;
   }
 
   .toolbar ul {
@@ -783,7 +786,6 @@ header {
 
   .about {
     margin-left: 40px;
-    background-image: url(../assets/images/about-desktop.svg);
     background-position: right 0%;
   }
 
