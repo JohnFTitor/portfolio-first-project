@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio
 
-## Available Scripts
+> This is the first Microverse project prepared for module one, where we look at the basics of how to write proper HTML/CSS while building a project. As a recent note, the project was refactored using React Framework
 
-In the project directory, you can run:
+![Preview](./preview.gif)
 
-### `npm start`
+This is a Portfolio that works as a presentation card for a Software developer, showcasing some important projects, personal and contact info, while keeping a fresh and elegant web design. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML/CSS and JavaScript
+- React Framework
+- Visual Studio Code, Chrome Developer Tools
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link](https://johnftitor.github.io/portfolio-first-project/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Clone this repository with git clone```https://github.com/JohnFTitor/portfolio-first-project.git``` using your terminal or command line.
+- Change to the project directory by entering : <br>
+```cd portfolio-first-project``` in the terminal
 
-### `npm run eject`
+### Prerequisites
+You need to make sure to have installed the latest version of Node.js and npm on your computer.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Setup
+You can clone this repository or simply download the files as a .zip
+If you want to set up a personal repository based on this one, you can as well fork it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install
+After clone it and before working on it, you have to run ```npm install``` so that all the dependencies of the project get downloaded in your pc locally.
+Such dependencies include React app and linters checks, for which you have to install the files following the ```wget``` commands inside linters.yml file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage
+You're free to use this project however you like it for educational purposes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To work on the project, run ```npm start``` in your terminal to deploy a live version of the development. This works in watch mode so it automatically reloads any need change you make to the files. 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Run linters checks
+Linter Checks are automatically run with Github actions when there's a pull request. If you want to run them locally, remember to have the config file in the root of the local project.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The deployment can be found in the Github Pages of this repository or through the link provided above. 
 
-### `npm run build` fails to minify
+Once a version of the project is ready, simply run ```npm run deploy``` in your terminal. This will build an optimized version of the project and upload it to the ```gh-pages``` branch on Github, thus updating the live version.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+👤 **Andrés Felipe Arroyave Naranjo**
+
+- GitHub: [@JohnFTitor](https://github.com/JohnFTitor)
+- Twitter: [@johnftitor](https://twitter.com/johnftitor)
+- LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
+
+## Contributors ⭐️
+
+Special thanks to my coding partners who helped me out building this project. Check out their profiles!
+
+👤 **Mauro Vasconcelos**
+
+- GitHub: [@vanillainanutshell](https://github.com/vanillainanutshell)
+- LinkedIn: [Mauro Vasconcelos](https://www.linkedin.com/in/mauro-vasconcelos-a3671a223/)
+
+👤 **Carlos Herver**
+
+- GitHub: [@carloshs1994](https://github.com/carloshs1994)
+- Twitter: [@hscarlos_](https://twitter.com/hscarlos_?t=jhubPupZtpVFyICkPdmi_Q&s=08)
+
+👤 **Gabriela Sánchez**
+
+- GitHub: [@githubhandle](https://github.com/gabyse1)
+- Twitter: [@twitterhandle](https://twitter.com/gabyse0)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriela-s%C3%A1nchez-espirilla-83011b225/)
+
+👤 **Oyelakin Ridwan**
+
+- GitHub: [@oyelakingG9](https://github.com/oyelakinG9/setup_project.git)
+- Twitter: [@oyelakinG9](https://github.com/oyelakinG9/setup_project.git)
+- LinkedIn: [Oyelakin](https://www.linkedin.com/in/oyelakin-ridwan-4b4a02b6)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
