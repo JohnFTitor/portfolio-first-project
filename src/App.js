@@ -4,6 +4,7 @@ import Presentation from './components/Presentation';
 import Projects from './components/Projects';
 import Modal from './components/Modal';
 import './styles/mainStyle.css';
+import About from './components/About';
 
 function App() {
   const [modalInfo, setModalInfo] = useState({});
@@ -24,6 +25,7 @@ function App() {
         setModal={setModal}
         modalInfo={modalInfo}
       />
+      <About />
     </div>
   );
 }

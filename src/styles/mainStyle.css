@@ -424,6 +424,7 @@ header {
 
 .about {
   margin: 100px 0 130px 0;
+  background-image: url('../assets/images/about.svg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 85%;
@@ -790,6 +791,7 @@ header {
 
   .about {
     margin-left: 40px;
+    background-image: url('../assets/images/about-desktop.svg');
     background-position: right 0%;
   }
 
