@@ -6,6 +6,7 @@ import Modal from './components/Modal';
 import './styles/mainStyle.css';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [modalInfo, setModalInfo] = useState({});
@@ -28,6 +29,7 @@ function App() {
       />
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }
