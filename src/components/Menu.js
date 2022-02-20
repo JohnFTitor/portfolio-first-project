@@ -12,9 +12,15 @@ const Menu = (props) => {
           <img src={CloseIcon} alt="close icon" />
         </button>
         <ul className="container content menu">
-          <li className="textPlaceholder menu-item"><a href="#projects" aria-label="Portfolio"> Portfolio</a></li>
-          <li className="textPlaceholder menu-item"><a href="#about" aria-label="About"> About</a></li>
-          <li className="textPlaceholder menu-item"><a href="#contact" aria-label="Contact"> Contact</a></li>
+          <li className="textPlaceholder menu-item">
+            <a href="#projects" aria-label="Portfolio" onClick={() => setActive(false)}> Portfolio </a>
+          </li>
+          <li className="textPlaceholder menu-item">
+            <a href="#about" aria-label="About" onClick={() => setActive(false)}> About</a>
+          </li>
+          <li className="textPlaceholder menu-item">
+            <a href="#contact" aria-label="Contact" onClick={() => setActive(false)}> Contact</a>
+          </li>
         </ul>
       </section>
     );
