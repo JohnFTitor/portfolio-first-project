@@ -23,16 +23,16 @@ const Project = (props) => {
     }
   }
 
-  let info = null;
+  let info = (
+    <div className="info">
+      <h3>{title}</h3>
+      <p>{shortDescription}</p>
+      <Tags tags={tags} />
+    </div>
+  );
 
-  if (id !== 'special') {
-    info = (
-      <div className="info">
-        <h3>{title}</h3>
-        <p>{shortDescription}</p>
-        <Tags tags={tags} />
-      </div>
-    );
+  if (id === 'special' && desktop) {
+    info = null;
   }
 
   let cardButton = null;
