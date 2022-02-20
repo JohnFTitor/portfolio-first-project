@@ -623,6 +623,7 @@ header {
 }
 
 .error-icon {
+  background-image: url('../assets/icons/exclamation-solid.svg');
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: 95% center;
