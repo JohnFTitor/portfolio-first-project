@@ -4,7 +4,9 @@ html {
   height: 100%;
 }
 
-body {
+body,
+.App,
+#root {
   margin: 0;
   height: 100%;
 }
@@ -108,6 +110,7 @@ header {
 
 #presentation {
   background-color: rgba(28, 26, 25, 1);
+  background-image: url('../assets/images/illustration.svg');
   background-repeat: no-repeat;
   background-position: 100% 120%;
   background-size: auto;
@@ -628,6 +631,7 @@ header {
   /* Frame and toolbar styling */
   #presentation {
     justify-content: flex-start;
+    background-image: url('../assets/images/Illustration-header.svg');
     background-position: right;
     background-size: 50%;
   }
