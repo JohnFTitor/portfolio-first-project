@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Modal from './components/Modal';
 import './styles/mainStyle.css';
 import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   const [modalInfo, setModalInfo] = useState({});
@@ -26,6 +27,7 @@ function App() {
         modalInfo={modalInfo}
       />
       <About />
+      <Contact />
     </div>
   );
 }
