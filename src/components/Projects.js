@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Project from './Project';
 
 // Assets
@@ -6,7 +7,12 @@ import ToDoPhoto from '../assets/images/ToDoApp.png';
 import CapstonePhoto from '../assets/images/capstone.png';
 import AwesomePhoto from '../assets/images/awesome.png';
 
-const Projects = () => {
+const Projects = (props) => {
+  const {
+    setModal,
+    setModalInfo,
+  } = props;
+
   const [isDesktop, setIsDesktop] = useState(() => (
     window.screen.width >= 1000
   ));
@@ -37,6 +43,8 @@ const Projects = () => {
           linkLive="https://johnftitor.github.io/toDoList/"
           linkSource="https://github.com/JohnFTitor/toDoList"
           desktop={isDesktop}
+          setModal={setModal}
+          setModalInfo={setModalInfo}
         />
         <Project
           id="special"
@@ -50,6 +58,8 @@ const Projects = () => {
           linkLive="https://johnftitor.github.io/capstoneProject_first/"
           linkSource="https://github.com/JohnFTitor/capstoneProject_first"
           desktop={isDesktop}
+          setModal={setModal}
+          setModalInfo={setModalInfo}
         />
         <Project
           id="card-2"
@@ -63,10 +73,17 @@ const Projects = () => {
           linkLive="https://melaniesigrid.github.io/awesomeBooks"
           linkSource="https://github.com/JohnFTitor/awesomeBooks"
           desktop={isDesktop}
+          setModal={setModal}
+          setModalInfo={setModalInfo}
         />
       </div>
     </section>
   );
+};
+
+Projects.propTypes = {
+  setModal: PropTypes.func.isRequired,
+  setModalInfo: PropTypes.func.isRequired,
 };
 
 export default Projects;

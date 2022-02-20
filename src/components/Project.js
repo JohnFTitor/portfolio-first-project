@@ -8,9 +8,29 @@ const Project = (props) => {
     image,
     title,
     shortDescription,
+    longDescription,
     tags,
     desktop,
+    linkLive,
+    linkSource,
+    setModal,
+    setModalInfo,
   } = props;
+
+  const popUpModal = () => {
+    setModalInfo(() => (
+      {
+        id,
+        image,
+        title,
+        longDescription,
+        tags,
+        linkLive,
+        linkSource,
+      }
+    ));
+    setModal(true);
+  };
 
   let cardClasses = 'card';
 
@@ -44,6 +64,7 @@ const Project = (props) => {
         rel="noopener noreferrer"
         href={`#${id}`}
         aria-label="see project"
+        onClick={popUpModal}
       >
         See Project
       </a>
@@ -78,6 +99,11 @@ Project.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(String).isRequired,
   desktop: PropTypes.bool.isRequired,
+  longDescription: PropTypes.string.isRequired,
+  linkSource: PropTypes.string.isRequired,
+  linkLive: PropTypes.string.isRequired,
+  setModal: PropTypes.func.isRequired,
+  setModalInfo: PropTypes.func.isRequired,
 };
 
 export default Project;
