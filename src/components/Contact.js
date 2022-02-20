@@ -77,7 +77,8 @@ const Contact = () => {
     event.preventDefault();
 
     if (checkemail()) {
-      emailNode.submit();
+      const form = document.querySelector('form');
+      form.submit();
       setName('');
       setEmail('');
       setMessage('');
