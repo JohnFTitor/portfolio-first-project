@@ -1,9 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio-first-project/static/css/main.7cc5d99b.css",
-    "main.js": "/portfolio-first-project/static/js/main.b5dca371.js",
+    "main.js": "/portfolio-first-project/static/js/main.648e7d14.js",
     "static/media/capstone.png": "/portfolio-first-project/static/media/capstone.6cca4ae306ed6cf96b9d.png",
+    "static/media/pokemon.png": "/portfolio-first-project/static/media/pokemon.eae005c520d7f0168075.png",
     "static/media/awesome.png": "/portfolio-first-project/static/media/awesome.68e15f167845481d0ae2.png",
+    "static/media/ticTacToe.png": "/portfolio-first-project/static/media/ticTacToe.b5012b898bd5ba8fb2a0.png",
+    "static/media/mathMagicians.png": "/portfolio-first-project/static/media/mathMagicians.f13d78d6c0d392d77ae6.png",
+    "static/media/leaderBoard.png": "/portfolio-first-project/static/media/leaderBoard.d1b159c9a67ecaf168d5.png",
     "static/media/ToDoApp.png": "/portfolio-first-project/static/media/ToDoApp.4f9c6f23861e3cfaa295.png",
     "static/media/Illustration-header.svg": "/portfolio-first-project/static/media/Illustration-header.344d27d04c73afdf9028.svg",
     "static/media/about-desktop.svg": "/portfolio-first-project/static/media/about-desktop.444b1fe7d53e2dd9a270.svg",
@@ -28,10 +32,10 @@
     "static/media/circle.svg": "/portfolio-first-project/static/media/circle.5b10d160e67fe936378e5d5a9c71ab50.svg",
     "static/media/square.svg": "/portfolio-first-project/static/media/square.4b9086dc43fe847f3aa30c228e234ea3.svg",
     "main.7cc5d99b.css.map": "/portfolio-first-project/static/css/main.7cc5d99b.css.map",
-    "main.b5dca371.js.map": "/portfolio-first-project/static/js/main.b5dca371.js.map"
+    "main.648e7d14.js.map": "/portfolio-first-project/static/js/main.648e7d14.js.map"
   },
   "entrypoints": [
     "static/css/main.7cc5d99b.css",
-    "static/js/main.b5dca371.js"
+    "static/js/main.648e7d14.js"
   ]
 }
