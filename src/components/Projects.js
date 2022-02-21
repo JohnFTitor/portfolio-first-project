@@ -76,7 +76,7 @@ const Projects = (props) => {
           Math Magicians is the first React Project I buit. The main objective of this was to understand React 
           features with a project-based learning approach`}
           tags={['CSS', 'React', 'JavaScript']}
-          linkLive="https://johnftitor.github.io/math_magicians"
+          linkLive="https://jfmath-magicians.netlify.app/"
           linkSource="https://github.com/JohnFTitor/math_magicians"
           desktop={isDesktop}
           setModal={setModal}
