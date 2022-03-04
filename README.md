@@ -58,7 +58,7 @@ Once a version of the project is ready, simply run ```npm run deploy``` in your 
 
 - GitHub: [@JohnFTitor](https://github.com/JohnFTitor)
 - Twitter: [@johnftitor](https://twitter.com/johnftitor)
-- LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
+- LinkedIn: [Andres](https://www.linkedin.com/in/andresarroyavenaranjo/?locale=en_US)
 
 ## Contributors ⭐️
 
